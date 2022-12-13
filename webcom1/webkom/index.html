@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>DeVeDe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Devede-IMDb</h3>
+
+    </header>
+    <main>
+        <form class="add-movie">
+            <h1>Dina favoritfilmer</h1>
+
+            <label for="Title">Title:</label>
+            <input type="text" name="name" placeholder="titel" required>
+            <label for="Genere">Genere:</label>
+            <input type="text" name="genere" placeholder="genere" required>
+            <label for="Date">Date:</label>
+            <input type="text" name="date" placeholder="utgivningsdatum" required>
+
+            <button id="btn-movie">Lägg till film</button>
+        </form>  
+        
+        <aside>
+            <form class="delete">
+                <label for="id">Document id:</label>
+                <input type="text" name="id" required>
+                <button>Delete movie</button>
+            </form>
+
+        </aside>
+        
+    </main>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
