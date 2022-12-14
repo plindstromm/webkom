@@ -1,6 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 header{
@@ -8,9 +9,7 @@ header{
     height: 10vh;
     background-color: rgb(245, 201, 6);
     width: 100%;
-    align-items: center;
-    
-    
+    align-items: center;  
 }
 
 header h3{
@@ -29,7 +28,7 @@ main{
 
 .add-movie{
     display: flex;
-    padding: 4rem;
+    padding: 2rem;
     margin: auto;
     border-radius: 1rem;
     align-items: center;
@@ -50,4 +49,8 @@ main{
     background-color: black;
     color:rgb(245, 201, 6) ;
     cursor: pointer;
+}
+
+label{
+    margin: 1.5rem;
 }

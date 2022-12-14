@@ -20,17 +20,18 @@ const db = getFirestore(app);
 //collection ref
 const colRef = collection(db, 'movies')
 
+//print movie elem
+const movieElem = document.querySelector('#movie-output')
+
 
 //hämta collection
-
-
 onSnapshot(colRef, (snapshot) => {
   let movies = []
     snapshot.docs.forEach((doc) => {
       movies.push({ ...doc.data(), id: doc.id })
+
     })
-    console.log (movies)
-    
+    console.log (movies)   
 })
 
 
@@ -49,7 +50,6 @@ addMovieForm.addEventListener('submit', (e) => {
     addMovieForm.reset()
     
   })
-  
 })
 
 //delete documents
