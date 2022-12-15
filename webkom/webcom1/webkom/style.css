@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(245, 201, 6);
+    width: 100%;
+    align-items: center;  
+}
+
+header h3{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(22, 22, 10);
+    font-family: Anton;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-movie{
+    display: flex;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn-movie{
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: anton;
+    background-color: rgb(245, 201, 6);
+    border: none;
+    transition: 0.4s;
+}
+
+#btn-movie:hover{
+    background-color: black;
+    color:rgb(245, 201, 6) ;
+    cursor: pointer;
+}
+
+label{
+    margin: 1.5rem;
+}
